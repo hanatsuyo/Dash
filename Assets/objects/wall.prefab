@@ -28,12 +28,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5862508901307169228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.63, y: -3.0956, z: 0}
-  m_LocalScale: {x: 1, y: 1.768867, z: 1}
+  m_LocalPosition: {x: 6.0591, y: -3.0956, z: 0}
+  m_LocalScale: {x: 5.8582, y: 1.768867, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5148684378030381725
 SpriteRenderer:
@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867fe45c482d24068ab4c0e3fb59078c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6888760362788939000, guid: 373996a20769b4c8bab80d83aca3bbe3, type: 3}
+  player: {fileID: 2370366165017165159, guid: 373996a20769b4c8bab80d83aca3bbe3, type: 3}

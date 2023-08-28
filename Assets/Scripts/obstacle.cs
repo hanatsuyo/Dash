@@ -8,7 +8,7 @@ public class obstacle : MonoBehaviour
   public player player;
     void Start()
     {
-
+      Debug.Log(player);
     }
 
     // Update is called once per frame
