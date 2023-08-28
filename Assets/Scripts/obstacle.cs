@@ -6,10 +6,9 @@ public class obstacle : MonoBehaviour
 {
   // Start is called before the first frame update
   public player player;
-  public Material playerMaterial;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
