@@ -6,6 +6,7 @@ public class obstacle : MonoBehaviour
 {
   // Start is called before the first frame update
   public player player;
+  public Material playerMaterial;
     void Start()
     {
         
@@ -29,9 +30,7 @@ public class obstacle : MonoBehaviour
             }
             else if (Mathf.Abs(collision.contacts[0].normal.x) > 0.9f)
             {
-                // 横から接触した場合の処理（ゲームオーバー）
-                // 例えば、ゲームオーバー画面を表示する、ゲームオーバーの処理を実行するなどの処理を記述
-                Destroy(gameObject); // オブジェクトを削除するなど
+                // ここに壁に衝突した時の処理を記述する。
             }
         }
     }
