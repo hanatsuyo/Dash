@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 5148684378030381725}
   - component: {fileID: 6808064623678917817}
   - component: {fileID: 1701824767437019400}
-  - component: {fileID: 525564197822686245}
   m_Layer: 0
   m_Name: wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -159,16 +158,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &525564197822686245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5862508901307169228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 867fe45c482d24068ab4c0e3fb59078c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2370366165017165159, guid: 373996a20769b4c8bab80d83aca3bbe3, type: 3}

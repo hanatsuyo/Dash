@@ -7,7 +7,7 @@ public class player : MonoBehaviour
   private float moveSpeed = 8.0f;
   private float jumpForce = 15.0f;
   private Rigidbody2D rb;
-  public bool canJump = true;
+  private bool canJump = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +35,18 @@ public class player : MonoBehaviour
       if(collision.gameObject.CompareTag("Ground")) {
       canJump = true;
       }
+      if (collision.gameObject.CompareTag("Wall"))
+        {
+            if (Mathf.Abs(collision.contacts[0].normal.y) > 0.9f)
+            {
+              // 上部に接触した場合の処理（プレイヤーは乗れる）
+              // 例えば、ジャンプ可能にする、得点を加算するなどの処理を記述
+              canJump = true;
+            }
+            else if (Mathf.Abs(collision.contacts[0].normal.x) > 0.9f)
+            {
+                // ここに壁に衝突した時の処理を記述する。
+            }
+        }
     }
 }
