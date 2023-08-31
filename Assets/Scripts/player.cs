@@ -8,10 +8,12 @@ public class player : MonoBehaviour
   private float jumpForce = 15.0f;
   private Rigidbody2D rb;
   private bool canJump = true;
+  public GameObject explosionPrefab; 
     // Start is called before the first frame update
     void Start()
     {
     rb = GetComponent<Rigidbody2D>();
+    gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -45,7 +47,10 @@ public class player : MonoBehaviour
             }
             else if (Mathf.Abs(collision.contacts[0].normal.x) > 0.9f)
             {
-                // ここに壁に衝突した時の処理を記述する。
+              // ここに壁に衝突した時の処理を記述する。
+              Vector3 explosionPosition = transform.position;
+              gameObject.SetActive(false);
+              Instantiate(explosionPrefab, explosionPosition, Quaternion.identity);
             }
         }
     }
