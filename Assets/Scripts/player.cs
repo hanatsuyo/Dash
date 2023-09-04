@@ -55,6 +55,12 @@ public class player : MonoBehaviour
               Invoke(nameof(ReloadScene), 1.5f);
             }
         }
+        if(collision.gameObject.CompareTag("Spike")) {
+              Vector3 explosionPosition = transform.position;
+              gameObject.SetActive(false);
+              Instantiate(explosionPrefab, explosionPosition, Quaternion.identity);
+              Invoke(nameof(ReloadScene), 1.5f);
+        }
     }
 
     private void ReloadScene () {
