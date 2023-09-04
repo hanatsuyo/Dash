@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -51,7 +52,12 @@ public class player : MonoBehaviour
               Vector3 explosionPosition = transform.position;
               gameObject.SetActive(false);
               Instantiate(explosionPrefab, explosionPosition, Quaternion.identity);
+              Invoke(nameof(ReloadScene), 1.5f);
             }
         }
+    }
+
+    private void ReloadScene () {
+      SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
     }
 }

@@ -253,6 +253,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 66189098290761414, guid: 373996a20769b4c8bab80d83aca3bbe3, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1237523366343567846, guid: 373996a20769b4c8bab80d83aca3bbe3, type: 3}
       propertyPath: m_Name
       value: player
@@ -361,6 +365,10 @@ PrefabInstance:
     - target: {fileID: 2852288999786422773, guid: 9b98f73586acf44e9abdc95bce6acde0, type: 3}
       propertyPath: m_Name
       value: background
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061587121733406837, guid: 9b98f73586acf44e9abdc95bce6acde0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
