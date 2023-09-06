@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
-  private float moveSpeed = 8.0f;
-  private float jumpForce = 15.0f;
+  private float moveSpeed = 11.0f;
+  private float jumpForce = 17.0f;
   private Rigidbody2D rb;
   private bool canJump = true;
   public GameObject explosionPrefab; 
